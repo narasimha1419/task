@@ -17,7 +17,6 @@ class MoviesListController extends GetxController {
     if (scrollController.position.maxScrollExtent > scrollController.offset &&
         scrollController.position.maxScrollExtent - scrollController.offset <=
             55) {
-      print('End Scroll');
       page = (page + 1);
       print(page);
       getMoviesList();
